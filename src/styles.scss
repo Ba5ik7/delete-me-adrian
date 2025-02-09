@@ -1,9 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@use "@angular/material" as mat;
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 // TODO: ADRIAN
+// Material dropped support for class based elevation
+@for $i from 0 through 24 {
+  .mat-elevation-z#{$i} {
+    @include mat.elevation($i);
+  }
+}
+
 // ! I Need to fix this!!
 // The consumer should not have to incude this in their styles.scss
 .position-relative {

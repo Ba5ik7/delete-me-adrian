@@ -90,8 +90,7 @@ export const TEST_DATA: NgxEditorJsBlock[] = [
       .container {
         display: flex;
         justify-content: center;
-        align-items: center;
-        height: 100vh;
+        margin-top: 50px;
       }
 
       .ngx-editor-js2 {
